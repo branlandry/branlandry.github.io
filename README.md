@@ -15,4 +15,4 @@ I'm not even sure this is going to work, but fingers crossed.
 
 ## Live Demo
 
-Visit the [live demo](https://branlandry.github.io) hosted on GitHub Pages.
+Visit the [live demo](https://branlandry.github.io/index.html) hosted on GitHub Pages.
