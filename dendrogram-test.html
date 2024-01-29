@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Force-Directed Graph</title>
+  <style>
+    body {
+      font-family: 'sans-serif';
+    }
+  </style>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+
+<script>
+  // Load data from CSV file
+  d3.csv("network_data_full.csv")
+    .then(function(data) {
+      if (data.length === 0) {
+        console.error("CSV file is empty or not loaded correctly.");
+        return;
+      }
+
+      // Create SVG container
+      const svg = d3.select("body").append("svg")
+        .attr("width", 800)
+        .attr("height", 600);
+
+      // Create force simulation
+      const simulation = d3.forceSimulation()
+        .force("link", d3.forceLink().id(d => d.id))
+        .force("charge", d3.forceManyBody().strength(d => (d.type === 'Biomarker' ? -100 : -50)))  // Adjust the charge strength
+        .force("center", d3.forceCenter(400, 300));
+
+      // Create links
+      const links = data.map(d => ({ source: d['Health Area'], target: d['Biomarker'], value: +d['Evidence'] }));
+      
+      // Create nodes
+      const nodes = Array.from(new Set(data.map(d => d['Health Area']).concat(data.map(d => d['Biomarker']))))
+        .map(name => ({ id: name, type: (data.find(d => d['Health Area'] === name) ? 'Health Area' : 'Biomarker') }));
+
+      // Add links to the simulation
+      simulation.nodes(nodes).on("tick", ticked);
+      simulation.force("link").links(links);
+
+      // Create links
+      const link = svg.append("g")
+        .attr("class", "links")
+        .selectAll("line")
+        .data(links)
+        .enter().append("line")
+        .attr("stroke", "gray")  // Set line color
+        .attr("stroke-width", d => d.value)
+        .attr("stroke-opacity", 0.6)  // Set line opacity
+        .style("display", "none");  // Hide links initially
+
+      // Create nodes
+      const node = svg.append("g")
+        .attr("class", "nodes")
+        .selectAll("circle")
+        .data(nodes)
+        .enter().append("circle")
+        .attr("r", d => (d.type === 'Health Area' ? 16 : calculateBiomarkerRadius(d.id)))  // Adjust the radius for "Health Area" and "Biomarker" circles
+        .attr("fill", d => (d.type === 'Health Area' ? 'blue' : getColor(d.id)))
+        .on("mouseover", handleMouseOver)
+        .on("mouseout", handleMouseOut);
+
+      // Create text labels for nodes
+      const label = svg.append("g")
+        .attr("class", "labels")
+        .selectAll("text")
+        .data(nodes)
+        .enter().append("text")
+        .text(d => d.id)
+        .attr("dx", 18)  // Add 6 pixels of spacing to the left
+        .attr("dy", 4)
+        .style("display", "none"); // Hide labels initially
+
+
+      // Set node colors based on the "Color" column
+      function getColor(nodeId) {
+        const matchingNode = data.find(d => d['Health Area'] === nodeId || d['Biomarker'] === nodeId);
+        return matchingNode ? (matchingNode['Color'] === 'yellow' ? '#FFC800' : matchingNode['Color']) : 'black';
+      }
+
+      // Set node colors based on the "Color" column
+      function getColor(nodeId) {
+        const matchingNode = data.find(d => d['Health Area'] === nodeId || d['Biomarker'] === nodeId);
+        return matchingNode ? (
+          matchingNode['Color'] === 'yellow' ? '#FFC800' :
+          matchingNode['Color'] === 'red' ? '#CF3616' :
+          matchingNode['Color'
+        ]) : 'black';
+      }
+
+
+      // Calculate the radius for Biomarker nodes based on the number of associations
+      function calculateBiomarkerRadius(biomarkerId) {
+        const biomarkerLinks = links.filter(link => link.target.id === biomarkerId);
+        return 4 + biomarkerLinks.length;  // Adjust the scaling factor as needed
+      }
+
+      // Update function for node, link, and label positions
+      function ticked() {
+        const healthAreaNodes = nodes.filter(node => node.type === 'Health Area');
+
+        // Arrange "Health Area" nodes on the outside of two concentric circles
+        healthAreaNodes.forEach((node, index) => {
+          const angle = (index / healthAreaNodes.length) * Math.PI * 2;
+          const radius = 200; // Adjust the radius as needed
+          node.x = 400 + radius * Math.cos(angle);
+          node.y = 300 + radius * Math.sin(angle);
+        });
+
+        link
+          .attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+
+        node
+          .attr("cx", d => d.x)
+          .attr("cy", d => d.y);
+
+        label
+          .attr("x", d => d.x)
+          .attr("y", d => d.y);
+      }
+
+      // Handle mouseover event
+      function handleMouseOver(d) {
+        // Show labels only for "Health Area" nodes
+        if (d.type === 'Health Area') {
+          svg.selectAll(".labels text")
+            .style("display", labelData => (labelData.id === d.id ? 'block' : 'none'));
+
+          // Show links only for the associated "Biomarker" nodes
+          svg.selectAll(".links line")
+            .style("display", linkData => (linkData.source.id === d.id ? 'block' : 'none'));
+        } else if (d.type === 'Biomarker') {
+          svg.selectAll(".labels text")
+            .style("display", labelData => (labelData.id === d.id ? 'block' : 'none'));
+
+          // Show links only for the associated "Health Area" nodes
+          svg.selectAll(".links line")
+            .style("display", linkData => (linkData.target.id === d.id ? 'block' : 'none'));
+        }
+      }
+
+      // Handle mouseout event
+      function handleMouseOut() {
+        // Hide all labels and links on mouseout
+        svg.selectAll(".labels text")
+          .style("display", "none");
+
+        svg.selectAll(".links line")
+          .style("display", "none");
+      }
+    })
+    .catch(function(error) {
+      console.error("Error loading CSV file:", error);
+    });
+</script>
+
+</body>
+</html>
