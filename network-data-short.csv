@@ -1,0 +1,42 @@
+Health Area,Biomarker,Color,Evidence
+Type 2 diabetes,C-reactive protein,red,4
+Type 2 diabetes,Retinol-binding protein 4,red,3
+Type 2 diabetes,Sex hormone-binding globulin,yellow,4
+Type 2 diabetes,Intercellular adhesion molecule 1,red,1
+Type 2 diabetes,Gelsolin,red,4
+Type 2 diabetes,Complement C3,red,2
+Type 2 diabetes,Homocysteine,red,1
+Type 2 diabetes,Short Chain Acylcarnitines,yellow,3
+Type 2 diabetes,Leucine,red,1
+Type 2 diabetes,Fibulin-1,red,1
+Pre-diabetes,Apolipoprotein C-II,yellow,4
+Pre-diabetes,C-reactive protein,red,4
+Pre-diabetes,Retinol-binding protein 4,red,4
+Pre-diabetes,Sex hormone-binding globulin,yellow,2
+Pre-diabetes,Long Chain Acylcarnitines,red,1
+Pre-diabetes,Phenylalanine,red,3
+Pre-diabetes,Leucine,red,3
+Pre-diabetes,Complement C3,red,3
+Pre-diabetes,Serum amyloid P-component,red,2
+Pre-diabetes,Glutathione peroxidase 3,red,1
+Pre-diabetes,beta-Hydroxybutyric acid,red,1
+Atherosclerosis,C-reactive protein,red,4
+Atherosclerosis,Serum albumin,red,1
+Atherosclerosis,von Willebrand Factor,red,2
+Atherosclerosis,C4b-binding protein alpha chain,red,2
+Atherosclerosis,Homocysteine,red,1
+Atherosclerosis,Leucine-rich alpha-2-glycoprotein 1,red,1
+Atherosclerosis,Intercellular adhesion molecule 1,red,2
+Atherosclerosis,Angiogenin,red,3
+Atherosclerosis,Fibulin-1,red,4
+Atherosclerosis,Lipopolysaccharide-binding protein,red,1
+Atherosclerosis,Apolipoprotein C-II,yellow,3
+Cardiovascular disease,Alpha-2-HS-glycoprotein,red,2
+Cardiovascular disease,C-reactive protein,red,1
+Cardiovascular disease,Retinol-binding protein 4,red,2
+Cardiovascular disease,Apolipoprotein E,red,2
+Cardiovascular disease,Complement C3,red,4
+Cardiovascular disease,Homocysteine,red,1
+Cardiovascular disease,Choline,red,2
+Cardiovascular disease,Apolipoprotein A-I,red,4
+Cardiovascular disease,Serum amyloid P-component,red,2
