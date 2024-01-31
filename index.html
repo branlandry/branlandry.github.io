@@ -64,7 +64,7 @@
         
         // Create nodes
         const nodes = Array.from(new Set(data.map(d => d['Health Area']).concat(data.map(d => d['Biomarker']))))
-          .map(name => ({ id: name, type: (data.find(d => d['Health Area'] === name) ? 'Health Area' : 'Biomarker') }));
+          .map(name => ({ id: name, type: (data.find(entry => entry['Health Area'] === name) ? 'Health Area' : 'Biomarker'), conventional: (data.find(entry => entry['Biomarker'] === name && entry['Conventional'] === 'TRUE') !== undefined) }));
 
         // Add links to the simulation
         simulation.nodes(nodes).on("tick", ticked);
@@ -89,6 +89,8 @@
           .enter().append("circle")
           .attr("r", d => (d.type === 'Health Area' ? 16 : calculateBiomarkerRadius(d.id)))  // Adjust the radius for "Health Area" and "Biomarker" circles
           .attr("fill", d => (d.type === 'Health Area' ? 'blue' : getColor(d.id)))
+          .attr("stroke", d => (d.type === 'Biomarker' && d.conventional ? 'black' : 'none'))  // Add black border for conventional Biomarker nodes
+          .attr("stroke-width", 2)  // Set the border width
           .on("mouseover", handleMouseOver)
           .on("mouseout", handleMouseOut);
 
