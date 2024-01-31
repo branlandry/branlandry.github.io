@@ -1,93 +1,93 @@
-Health Area,Biomarker,Color,Evidence
-Type 2 diabetes,C-reactive protein,red,4
-Type 2 diabetes,Retinol-binding protein 4,red,3
-Type 2 diabetes,Sex hormone-binding globulin,yellow,4
-Type 2 diabetes,Intercellular adhesion molecule 1,red,1
-Type 2 diabetes,Gelsolin,red,4
-Type 2 diabetes,Complement C3,red,2
-Type 2 diabetes,Homocysteine,red,1
-Type 2 diabetes,Short Chain Acylcarnitines,yellow,3
-Type 2 diabetes,Leucine,red,1
-Type 2 diabetes,Fibulin-1,red,1
-Pre-diabetes,Apolipoprotein C-II,yellow,4
-Pre-diabetes,C-reactive protein,red,4
-Pre-diabetes,Retinol-binding protein 4,red,4
-Pre-diabetes,Sex hormone-binding globulin,yellow,2
-Pre-diabetes,Long Chain Acylcarnitines,red,1
-Pre-diabetes,Phenylalanine,red,3
-Pre-diabetes,Leucine,red,3
-Pre-diabetes,Complement C3,red,3
-Pre-diabetes,Serum amyloid P-component,red,2
-Pre-diabetes,Glutathione peroxidase 3,red,1
-Pre-diabetes,beta-Hydroxybutyric acid,red,1
-Atherosclerosis,C-reactive protein,red,4
-Atherosclerosis,Serum albumin,red,1
-Atherosclerosis,von Willebrand Factor,red,2
-Atherosclerosis,C4b-binding protein alpha chain,red,2
-Atherosclerosis,Homocysteine,red,1
-Atherosclerosis,Leucine-rich alpha-2-glycoprotein 1,red,1
-Atherosclerosis,Intercellular adhesion molecule 1,red,2
-Atherosclerosis,Angiogenin,red,3
-Atherosclerosis,Fibulin-1,red,4
-Atherosclerosis,Lipopolysaccharide-binding protein,red,1
-Atherosclerosis,Apolipoprotein C-II,yellow,3
-Cardiovascular disease,Alpha-2-HS-glycoprotein,red,2
-Cardiovascular disease,C-reactive protein,red,1
-Cardiovascular disease,Retinol-binding protein 4,red,2
-Cardiovascular disease,Apolipoprotein E,red,2
-Cardiovascular disease,Complement C3,red,4
-Cardiovascular disease,Homocysteine,red,1
-Cardiovascular disease,Choline,red,2
-Cardiovascular disease,Apolipoprotein A-I,red,4
-Cardiovascular disease,Serum amyloid P-component,red,2
-Heart attack,C-reactive protein,red,4
-Heart attack,Apolipoprotein A-IV,yellow,1
-Heart attack,Complement C3,red,2
-Heart attack,Apolipoprotein A-I,red,4
-Hypertension,Retinol-binding protein 4,red,4
-Hypertension,Complement C3,red,1
-Alzheimer's disease,Homocysteine,red,4
-Alzheimer's disease,Long Chain Acylcarnitines,red,3
-Alzheimer's disease,Sphingomyeline C16:0,yellow,3
-Alzheimer's disease,Sphingomyeline C20:2,red,1
-Alzheimer's disease,Creatinine,red,3
-Alzheimer's disease,Apolipoprotein A-I,red,4
-Alzheimer's disease,Alpha-2-HS-glycoprotein,red,3
-Depression,C-reactive protein,red,2
-Depression,Haptoglobin,red,1
-Rheumatoid arthritis,Alpha-1-acid glycoprotein 1,red,1
-Rheumatoid arthritis,Leucine-rich alpha-2-glycoprotein 1,red,4
-Rheumatoid arthritis,Lysozyme C,red,1
-Rheumatoid arthritis,Serum albumin,red,4
-Rheumatoid arthritis,Intercellular adhesion molecule 1,red,4
-Rheumatoid arthritis,Haptoglobin,red,3
-Rheumatoid arthritis,Homocysteine,red,2
-Rheumatoid arthritis,C-reactive protein,red,2
-Chronic obstructive pulmonary disease,Inter-alpha-trypsin inhibitor heavy chain H4,red,4
-Chronic obstructive pulmonary disease,Phenylalanine,red,1
-Chronic obstructive pulmonary disease,beta-Hydroxybutyric acid,red,1
-Chronic obstructive pulmonary disease,Haptoglobin,red,3
-Chronic obstructive pulmonary disease,C-reactive protein,red,3
-Inflammatory bowel disease,Serum albumin,red,4
-Inflammatory bowel disease,Glutamine,red,4
-Inflammatory bowel disease,Angiogenin,red,1
-Inflammatory bowel disease,Lipopolysaccharide-binding protein,red,1
-Inflammatory bowel disease,Phenylalanine,red,3
-Inflammatory bowel disease,Lactic acid,red,3
-Inflammatory bowel disease,beta-Hydroxybutyric acid,red,4
-Inflammatory bowel disease,Retinol-binding protein 4,red,4
-Inflammatory bowel disease,Complement C3,red,4
-Inflammatory bowel disease,Intercellular adhesion molecule 1,red,1
-Inflammatory bowel disease,Ceruloplasmin,red,4
-Inflammatory bowel disease,C-reactive protein,red,4
-Non-alcoholic fatty liver disease,Retinol-binding protein 4,red,4
-Non-alcoholic fatty liver disease,Intercellular adhesion molecule 1,red,1
-Non-alcoholic fatty liver disease,Homocysteine,red,2
-Non-alcoholic fatty liver disease,Lactic acid,red,1
-Non-alcoholic fatty liver disease,C-reactive protein,red,4
-Liver disease,Kallistatin,yellow,1
-Liver disease,alpha-Ketoglutaric acid,red,1
-Liver disease,Complement component C7,red,4
-Liver disease,Intercellular adhesion molecule 1,red,4
-Liver disease,Cystatin-C,red,2
-Liver disease,Beta-2-microglobulin,red,4
+Health Area,Biomarker,Color,Evidence,Conventional
+Type 2 diabetes,C-reactive protein,red,4,TRUE
+Type 2 diabetes,Leucine,red,1,TRUE
+Pre-diabetes,C-reactive protein,red,4,TRUE
+Pre-diabetes,Leucine,red,3,TRUE
+Atherosclerosis,C-reactive protein,red,4,TRUE
+Cardiovascular disease,C-reactive protein,red,1,TRUE
+Heart attack,C-reactive protein,red,4,TRUE
+Alzheimer's disease,Creatinine,red,3,TRUE
+Depression,C-reactive protein,red,2,TRUE
+Rheumatoid arthritis,C-reactive protein,red,2,TRUE
+Chronic obstructive pulmonary disease,C-reactive protein,red,3,TRUE
+Inflammatory bowel disease,C-reactive protein,red,4,TRUE
+Non-alcoholic fatty liver disease,C-reactive protein,red,4,TRUE
+Liver disease,Cystatin-C,red,2,TRUE
+Type 2 diabetes,Retinol-binding protein 4,red,3,FALSE
+Type 2 diabetes,Sex hormone-binding globulin,yellow,4,FALSE
+Type 2 diabetes,Intercellular adhesion molecule 1,red,1,FALSE
+Type 2 diabetes,Gelsolin,red,4,FALSE
+Type 2 diabetes,Complement C3,red,2,FALSE
+Type 2 diabetes,Homocysteine,red,1,FALSE
+Type 2 diabetes,Short Chain Acylcarnitines,yellow,3,FALSE
+Type 2 diabetes,Fibulin-1,red,1,FALSE
+Pre-diabetes,Apolipoprotein C-II,yellow,4,FALSE
+Pre-diabetes,Retinol-binding protein 4,red,4,FALSE
+Pre-diabetes,Sex hormone-binding globulin,yellow,2,FALSE
+Pre-diabetes,Long Chain Acylcarnitines,red,1,FALSE
+Pre-diabetes,Phenylalanine,red,3,FALSE
+Pre-diabetes,Complement C3,red,3,FALSE
+Pre-diabetes,Serum amyloid P-component,red,2,FALSE
+Pre-diabetes,Glutathione peroxidase 3,red,1,FALSE
+Pre-diabetes,beta-Hydroxybutyric acid,red,1,FALSE
+Atherosclerosis,Serum albumin,red,1,FALSE
+Atherosclerosis,von Willebrand Factor,red,2,FALSE
+Atherosclerosis,C4b-binding protein alpha chain,red,2,FALSE
+Atherosclerosis,Homocysteine,red,1,FALSE
+Atherosclerosis,Leucine-rich alpha-2-glycoprotein 1,red,1,FALSE
+Atherosclerosis,Intercellular adhesion molecule 1,red,2,FALSE
+Atherosclerosis,Angiogenin,red,3,FALSE
+Atherosclerosis,Fibulin-1,red,4,FALSE
+Atherosclerosis,Lipopolysaccharide-binding protein,red,1,FALSE
+Atherosclerosis,Apolipoprotein C-II,yellow,3,FALSE
+Cardiovascular disease,Alpha-2-HS-glycoprotein,red,2,FALSE
+Cardiovascular disease,Retinol-binding protein 4,red,2,FALSE
+Cardiovascular disease,Apolipoprotein E,red,2,FALSE
+Cardiovascular disease,Complement C3,red,4,FALSE
+Cardiovascular disease,Homocysteine,red,1,FALSE
+Cardiovascular disease,Choline,red,2,FALSE
+Cardiovascular disease,Apolipoprotein A-I,red,4,FALSE
+Cardiovascular disease,Serum amyloid P-component,red,2,FALSE
+Heart attack,Apolipoprotein A-IV,yellow,1,FALSE
+Heart attack,Complement C3,red,2,FALSE
+Heart attack,Apolipoprotein A-I,red,4,FALSE
+Hypertension,Retinol-binding protein 4,red,4,FALSE
+Hypertension,Complement C3,red,1,FALSE
+Alzheimer's disease,Homocysteine,red,4,FALSE
+Alzheimer's disease,Long Chain Acylcarnitines,red,3,FALSE
+Alzheimer's disease,Sphingomyeline C16:0,yellow,3,FALSE
+Alzheimer's disease,Sphingomyeline C20:2,red,1,FALSE
+Alzheimer's disease,Apolipoprotein A-I,red,4,FALSE
+Alzheimer's disease,Alpha-2-HS-glycoprotein,red,3,FALSE
+Depression,Haptoglobin,red,1,FALSE
+Rheumatoid arthritis,Alpha-1-acid glycoprotein 1,red,1,FALSE
+Rheumatoid arthritis,Leucine-rich alpha-2-glycoprotein 1,red,4,FALSE
+Rheumatoid arthritis,Lysozyme C,red,1,FALSE
+Rheumatoid arthritis,Serum albumin,red,4,FALSE
+Rheumatoid arthritis,Intercellular adhesion molecule 1,red,4,FALSE
+Rheumatoid arthritis,Haptoglobin,red,3,FALSE
+Rheumatoid arthritis,Homocysteine,red,2,FALSE
+Chronic obstructive pulmonary disease,Inter-alpha-trypsin inhibitor heavy chain H4,red,4,FALSE
+Chronic obstructive pulmonary disease,Phenylalanine,red,1,FALSE
+Chronic obstructive pulmonary disease,beta-Hydroxybutyric acid,red,1,FALSE
+Chronic obstructive pulmonary disease,Haptoglobin,red,3,FALSE
+Inflammatory bowel disease,Serum albumin,red,4,FALSE
+Inflammatory bowel disease,Glutamine,red,4,FALSE
+Inflammatory bowel disease,Angiogenin,red,1,FALSE
+Inflammatory bowel disease,Lipopolysaccharide-binding protein,red,1,FALSE
+Inflammatory bowel disease,Phenylalanine,red,3,FALSE
+Inflammatory bowel disease,Lactic acid,red,3,FALSE
+Inflammatory bowel disease,beta-Hydroxybutyric acid,red,4,FALSE
+Inflammatory bowel disease,Retinol-binding protein 4,red,4,FALSE
+Inflammatory bowel disease,Complement C3,red,4,FALSE
+Inflammatory bowel disease,Intercellular adhesion molecule 1,red,1,FALSE
+Inflammatory bowel disease,Ceruloplasmin,red,4,FALSE
+Non-alcoholic fatty liver disease,Retinol-binding protein 4,red,4,FALSE
+Non-alcoholic fatty liver disease,Intercellular adhesion molecule 1,red,1,FALSE
+Non-alcoholic fatty liver disease,Homocysteine,red,2,FALSE
+Non-alcoholic fatty liver disease,Lactic acid,red,1,FALSE
+Liver disease,Kallistatin,yellow,1,FALSE
+Liver disease,alpha-Ketoglutaric acid,red,1,FALSE
+Liver disease,Complement component C7,red,4,FALSE
+Liver disease,Intercellular adhesion molecule 1,red,4,FALSE
+Liver disease,Beta-2-microglobulin,red,4,FALSE
