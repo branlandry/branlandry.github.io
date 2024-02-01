@@ -189,11 +189,10 @@
           return 4 + biomarkerLinks.length;  // Adjust the scaling factor as needed
         }
 
-<<<<<<< HEAD
         // Update function for node, link, and label positions
         function ticked() {
           const healthCategoryNodes = nodes.filter(node => node.type === 'Health Category');
-
+        
           // Arrange "Health Category" nodes on the outside
           healthCategoryNodes.forEach((node, index) => {
             const angle = (index / healthCategoryNodes.length) * Math.PI * 2;
@@ -201,68 +200,21 @@
             node.x = 400 + radius * Math.cos(angle);
             node.y = 300 + radius * Math.sin(angle);
           });
-
+        
           link
             .attr("x1", d => d.source.x)
             .attr("y1", d => d.source.y)
             .attr("x2", d => d.target.x)
             .attr("y2", d => d.target.y);
-
+        
           node
-            .attr("transform", d => `translate(${d.x},${d.y})`);
-
+            .attr("cx", d => d.x)
+            .attr("cy", d => d.y);
+        
           label
             .attr("x", d => d.x)
             .attr("y", d => d.y);
         }
-=======
-
-// Update function for node, link, and label positions
-function ticked() {
-  const healthCategoryNodes = nodes.filter(node => node.type === 'Health Category');
-  const healthAreaNodes = nodes.filter(node => node.type === 'Health Area');
-  const biomarkerNodes = nodes.filter(node => node.type === 'Biomarker');
-
-  // Arrange "Health Category" nodes on the outside
-  healthCategoryNodes.forEach((node, index) => {
-    const angle = (index / healthCategoryNodes.length) * Math.PI * 2;
-    const radius = 250; // Adjust the radius as needed
-    node.x = 400 + radius * Math.cos(angle);
-    node.y = 300 + radius * Math.sin(angle);
-  });
-
-  // Introduce an additional force to attract "Health Area" nodes towards their parent "Health Category" nodes
-  const healthAreaForce = d3.forceLink(links.filter(link => link.target.type === 'Health Area'))
-    .id(d => d.id)
-    .distance(50)  // Adjust the distance as needed
-    .strength(0.5); // Adjust the strength as needed
-  simulation.force("healthAreaLink", healthAreaForce);
-
-  simulation.tick();
-
-  // Arrange "Biomarker" nodes inside the "Health Category" circle
-  biomarkerNodes.forEach(node => {
-    const biomarkerLinks = links.filter(link => link.target.id === node.id);
-    const radius = 4 + biomarkerLinks.length;
-    node.x += (Math.random() - 0.5) * 2; // Add some randomness to avoid overlap
-    node.y += (Math.random() - 0.5) * 2;
-  });
-
-  link
-    .attr("x1", d => d.source.x)
-    .attr("y1", d => d.source.y)
-    .attr("x2", d => d.target.x)
-    .attr("y2", d => d.target.y);
-
-  node
-    .attr("cx", d => d.x)
-    .attr("cy", d => d.y);
-
-  label
-    .attr("x", d => d.x)
-    .attr("y", d => d.y);
-}
->>>>>>> 27887b73212369d72d87b4b2423461fe3e6d2d92
 
         // Handle mouseover event
         function handleMouseOver(d) {
