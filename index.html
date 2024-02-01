@@ -192,7 +192,7 @@
         // Update function for node, link, and label positions
         function ticked() {
           const healthCategoryNodes = nodes.filter(node => node.type === 'Health Category');
-        
+
           // Arrange "Health Category" nodes on the outside
           healthCategoryNodes.forEach((node, index) => {
             const angle = (index / healthCategoryNodes.length) * Math.PI * 2;
@@ -200,17 +200,16 @@
             node.x = 400 + radius * Math.cos(angle);
             node.y = 300 + radius * Math.sin(angle);
           });
-        
+
           link
             .attr("x1", d => d.source.x)
             .attr("y1", d => d.source.y)
             .attr("x2", d => d.target.x)
             .attr("y2", d => d.target.y);
-        
+
           node
-            .attr("cx", d => d.x)
-            .attr("cy", d => d.y);
-        
+            .attr("transform", d => `translate(${d.x},${d.y})`);
+
           label
             .attr("x", d => d.x)
             .attr("y", d => d.y);
