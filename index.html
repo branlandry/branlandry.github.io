@@ -123,7 +123,7 @@
             }
           })
           .attr("fill", d => (d.type === 'Health Area' ? getHealthAreaColor(d.score) : (d.type === 'Health Category' ? 'green' : getColor(d.id))))  // Change the color assignment
-          .attr("stroke", d => (d.type === 'Biomarker' && d.conventional ? 'black' : 'none'))  // Add black border for conventional Biomarker nodes
+          .attr("stroke", d => (d.type === 'Health Area' ? getHealthAreaBorderColor(d.score) : (d.type === 'Biomarker' && d.conventional ? 'black' : 'none')))  // Add black border for conventional Biomarker nodes
           .attr("stroke-width", 2);  // Set the border width
 
         // Create text labels for "Health Area" nodes
@@ -211,6 +211,20 @@
               return '#FFF9E5';
             } else {
               return '#EBF7FB';
+            }
+          }
+          return 'black';
+        }
+
+        // Get border color for "Health Area" nodes based on the score
+        function getHealthAreaBorderColor(score) {
+          if (score !== null) {
+            if (score <= 33) {
+              return '#8C210B';
+            } else if (score <= 66) {
+              return '#D78100';
+            } else {
+              return '#1085AA';
             }
           }
           return 'black';
