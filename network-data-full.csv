@@ -1,93 +1,93 @@
-Health Category,Health Area,Biomarker,Color,Evidence,Conventional
-Brain Health,Depression,C-reactive protein,red,2,TRUE
-Brain Health,Depression,Haptoglobin,red,1,FALSE
-Brain Health,Alzheimer's disease,Creatinine,red,3,TRUE
-Brain Health,Alzheimer's disease,Homocysteine,red,4,FALSE
-Brain Health,Alzheimer's disease,Long Chain Acylcarnitines,red,3,FALSE
-Brain Health,Alzheimer's disease,Sphingomyeline C16:0,yellow,3,FALSE
-Brain Health,Alzheimer's disease,Sphingomyeline C20:2,red,1,FALSE
-Brain Health,Alzheimer's disease,Apolipoprotein A-I,red,4,FALSE
-Brain Health,Alzheimer's disease,Alpha-2-HS-glycoprotein,red,3,FALSE
-Gut Health,Inflammatory bowel disease,C-reactive protein,red,4,TRUE
-Gut Health,Inflammatory bowel disease,Serum albumin,red,4,FALSE
-Gut Health,Inflammatory bowel disease,Glutamine,red,4,FALSE
-Gut Health,Inflammatory bowel disease,Angiogenin,red,1,FALSE
-Gut Health,Inflammatory bowel disease,Lipopolysaccharide-binding protein,red,1,FALSE
-Gut Health,Inflammatory bowel disease,Phenylalanine,red,3,FALSE
-Gut Health,Inflammatory bowel disease,Lactic acid,red,3,FALSE
-Gut Health,Inflammatory bowel disease,beta-Hydroxybutyric acid,red,4,FALSE
-Gut Health,Inflammatory bowel disease,Retinol-binding protein 4,red,4,FALSE
-Gut Health,Inflammatory bowel disease,Complement C3,red,4,FALSE
-Gut Health,Inflammatory bowel disease,Intercellular adhesion molecule 1,red,1,FALSE
-Gut Health,Inflammatory bowel disease,Ceruloplasmin,red,4,FALSE
-Heart Health,Hypertension,Retinol-binding protein 4,red,4,FALSE
-Heart Health,Hypertension,Complement C3,red,1,FALSE
-Heart Health,Heart attack,C-reactive protein,red,4,TRUE
-Heart Health,Heart attack,Apolipoprotein A-IV,yellow,1,FALSE
-Heart Health,Heart attack,Complement C3,red,2,FALSE
-Heart Health,Heart attack,Apolipoprotein A-I,red,4,FALSE
-Heart Health,Cardiovascular disease,C-reactive protein,red,1,TRUE
-Heart Health,Cardiovascular disease,Alpha-2-HS-glycoprotein,red,2,FALSE
-Heart Health,Cardiovascular disease,Retinol-binding protein 4,red,2,FALSE
-Heart Health,Cardiovascular disease,Apolipoprotein E,red,2,FALSE
-Heart Health,Cardiovascular disease,Complement C3,red,4,FALSE
-Heart Health,Cardiovascular disease,Homocysteine,red,1,FALSE
-Heart Health,Cardiovascular disease,Choline,red,2,FALSE
-Heart Health,Cardiovascular disease,Apolipoprotein A-I,red,4,FALSE
-Heart Health,Cardiovascular disease,Serum amyloid P-component,red,2,FALSE
-Heart Health,Atherosclerosis,C-reactive protein,red,4,TRUE
-Heart Health,Atherosclerosis,Serum albumin,red,1,FALSE
-Heart Health,Atherosclerosis,von Willebrand Factor,red,2,FALSE
-Heart Health,Atherosclerosis,C4b-binding protein alpha chain,red,2,FALSE
-Heart Health,Atherosclerosis,Homocysteine,red,1,FALSE
-Heart Health,Atherosclerosis,Leucine-rich alpha-2-glycoprotein 1,red,1,FALSE
-Heart Health,Atherosclerosis,Intercellular adhesion molecule 1,red,2,FALSE
-Heart Health,Atherosclerosis,Angiogenin,red,3,FALSE
-Heart Health,Atherosclerosis,Fibulin-1,red,4,FALSE
-Heart Health,Atherosclerosis,Lipopolysaccharide-binding protein,red,1,FALSE
-Heart Health,Atherosclerosis,Apolipoprotein C-II,yellow,3,FALSE
-Joint Health,Rheumatoid arthritis,C-reactive protein,red,2,TRUE
-Joint Health,Rheumatoid arthritis,Alpha-1-acid glycoprotein 1,red,1,FALSE
-Joint Health,Rheumatoid arthritis,Leucine-rich alpha-2-glycoprotein 1,red,4,FALSE
-Joint Health,Rheumatoid arthritis,Lysozyme C,red,1,FALSE
-Joint Health,Rheumatoid arthritis,Serum albumin,red,4,FALSE
-Joint Health,Rheumatoid arthritis,Intercellular adhesion molecule 1,red,4,FALSE
-Joint Health,Rheumatoid arthritis,Haptoglobin,red,3,FALSE
-Joint Health,Rheumatoid arthritis,Homocysteine,red,2,FALSE
-Liver Health,Non-alcoholic fatty liver disease,C-reactive protein,red,4,TRUE
-Liver Health,Non-alcoholic fatty liver disease,Retinol-binding protein 4,red,4,FALSE
-Liver Health,Non-alcoholic fatty liver disease,Intercellular adhesion molecule 1,red,1,FALSE
-Liver Health,Non-alcoholic fatty liver disease,Homocysteine,red,2,FALSE
-Liver Health,Non-alcoholic fatty liver disease,Lactic acid,red,1,FALSE
-Liver Health,Liver disease,Cystatin-C,red,2,TRUE
-Liver Health,Liver disease,Kallistatin,yellow,1,FALSE
-Liver Health,Liver disease,alpha-Ketoglutaric acid,red,1,FALSE
-Liver Health,Liver disease,Complement component C7,red,4,FALSE
-Liver Health,Liver disease,Intercellular adhesion molecule 1,red,4,FALSE
-Liver Health,Liver disease,Beta-2-microglobulin,red,4,FALSE
-Lung Health,Chronic obstructive pulmonary disease,C-reactive protein,red,3,TRUE
-Lung Health,Chronic obstructive pulmonary disease,Inter-alpha-trypsin inhibitor heavy chain H4,red,4,FALSE
-Lung Health,Chronic obstructive pulmonary disease,Phenylalanine,red,1,FALSE
-Lung Health,Chronic obstructive pulmonary disease,beta-Hydroxybutyric acid,red,1,FALSE
-Lung Health,Chronic obstructive pulmonary disease,Haptoglobin,red,3,FALSE
-Metabolic Health,Type 2 diabetes,C-reactive protein,red,4,TRUE
-Metabolic Health,Type 2 diabetes,Leucine,red,1,TRUE
-Metabolic Health,Type 2 diabetes,Retinol-binding protein 4,red,3,FALSE
-Metabolic Health,Type 2 diabetes,Sex hormone-binding globulin,yellow,4,FALSE
-Metabolic Health,Type 2 diabetes,Intercellular adhesion molecule 1,red,1,FALSE
-Metabolic Health,Type 2 diabetes,Gelsolin,red,4,FALSE
-Metabolic Health,Type 2 diabetes,Complement C3,red,2,FALSE
-Metabolic Health,Type 2 diabetes,Homocysteine,red,1,FALSE
-Metabolic Health,Type 2 diabetes,Short Chain Acylcarnitines,yellow,3,FALSE
-Metabolic Health,Type 2 diabetes,Fibulin-1,red,1,FALSE
-Metabolic Health,Pre-diabetes,C-reactive protein,red,4,TRUE
-Metabolic Health,Pre-diabetes,Leucine,red,3,TRUE
-Metabolic Health,Pre-diabetes,Apolipoprotein C-II,yellow,4,FALSE
-Metabolic Health,Pre-diabetes,Retinol-binding protein 4,red,4,FALSE
-Metabolic Health,Pre-diabetes,Sex hormone-binding globulin,yellow,2,FALSE
-Metabolic Health,Pre-diabetes,Long Chain Acylcarnitines,red,1,FALSE
-Metabolic Health,Pre-diabetes,Phenylalanine,red,3,FALSE
-Metabolic Health,Pre-diabetes,Complement C3,red,3,FALSE
-Metabolic Health,Pre-diabetes,Serum amyloid P-component,red,2,FALSE
-Metabolic Health,Pre-diabetes,Glutathione peroxidase 3,red,1,FALSE
-Metabolic Health,Pre-diabetes,beta-Hydroxybutyric acid,red,1,FALSE
+Health Category,Health Area,Score,Biomarker,Color,Evidence,Conventional
+Brain Health,Depression,80,C-reactive protein,red,2,TRUE
+Brain Health,Depression,80,Haptoglobin,red,1,FALSE
+Brain Health,Alzheimer's disease,30,Creatinine,red,3,TRUE
+Brain Health,Alzheimer's disease,30,Homocysteine,red,4,FALSE
+Brain Health,Alzheimer's disease,30,Long Chain Acylcarnitines,red,3,FALSE
+Brain Health,Alzheimer's disease,30,Sphingomyeline C16:0,yellow,3,FALSE
+Brain Health,Alzheimer's disease,30,Sphingomyeline C20:2,red,1,FALSE
+Brain Health,Alzheimer's disease,30,Apolipoprotein A-I,red,4,FALSE
+Brain Health,Alzheimer's disease,30,Alpha-2-HS-glycoprotein,red,3,FALSE
+Gut Health,Inflammatory bowel disease,20,C-reactive protein,red,4,TRUE
+Gut Health,Inflammatory bowel disease,20,Serum albumin,red,4,FALSE
+Gut Health,Inflammatory bowel disease,20,Glutamine,red,4,FALSE
+Gut Health,Inflammatory bowel disease,20,Angiogenin,red,1,FALSE
+Gut Health,Inflammatory bowel disease,20,Lipopolysaccharide-binding protein,red,1,FALSE
+Gut Health,Inflammatory bowel disease,20,Phenylalanine,red,3,FALSE
+Gut Health,Inflammatory bowel disease,20,Lactic acid,red,3,FALSE
+Gut Health,Inflammatory bowel disease,20,beta-Hydroxybutyric acid,red,4,FALSE
+Gut Health,Inflammatory bowel disease,20,Retinol-binding protein 4,red,4,FALSE
+Gut Health,Inflammatory bowel disease,20,Complement C3,red,4,FALSE
+Gut Health,Inflammatory bowel disease,20,Intercellular adhesion molecule 1,red,1,FALSE
+Gut Health,Inflammatory bowel disease,20,Ceruloplasmin,red,4,FALSE
+Heart Health,Hypertension,80,Retinol-binding protein 4,red,4,FALSE
+Heart Health,Hypertension,80,Complement C3,red,1,FALSE
+Heart Health,Heart attack,65,C-reactive protein,red,4,TRUE
+Heart Health,Heart attack,65,Apolipoprotein A-IV,yellow,1,FALSE
+Heart Health,Heart attack,65,Complement C3,red,2,FALSE
+Heart Health,Heart attack,65,Apolipoprotein A-I,red,4,FALSE
+Heart Health,Cardiovascular disease,25,C-reactive protein,red,1,TRUE
+Heart Health,Cardiovascular disease,25,Alpha-2-HS-glycoprotein,red,2,FALSE
+Heart Health,Cardiovascular disease,25,Retinol-binding protein 4,red,2,FALSE
+Heart Health,Cardiovascular disease,25,Apolipoprotein E,red,2,FALSE
+Heart Health,Cardiovascular disease,25,Complement C3,red,4,FALSE
+Heart Health,Cardiovascular disease,25,Homocysteine,red,1,FALSE
+Heart Health,Cardiovascular disease,25,Choline,red,2,FALSE
+Heart Health,Cardiovascular disease,25,Apolipoprotein A-I,red,4,FALSE
+Heart Health,Cardiovascular disease,25,Serum amyloid P-component,red,2,FALSE
+Heart Health,Atherosclerosis,20,C-reactive protein,red,4,TRUE
+Heart Health,Atherosclerosis,20,Serum albumin,red,1,FALSE
+Heart Health,Atherosclerosis,20,von Willebrand Factor,red,2,FALSE
+Heart Health,Atherosclerosis,20,C4b-binding protein alpha chain,red,2,FALSE
+Heart Health,Atherosclerosis,20,Homocysteine,red,1,FALSE
+Heart Health,Atherosclerosis,20,Leucine-rich alpha-2-glycoprotein 1,red,1,FALSE
+Heart Health,Atherosclerosis,20,Intercellular adhesion molecule 1,red,2,FALSE
+Heart Health,Atherosclerosis,20,Angiogenin,red,3,FALSE
+Heart Health,Atherosclerosis,20,Fibulin-1,red,4,FALSE
+Heart Health,Atherosclerosis,20,Lipopolysaccharide-binding protein,red,1,FALSE
+Heart Health,Atherosclerosis,20,Apolipoprotein C-II,yellow,3,FALSE
+Joint Health,Rheumatoid arthritis,30,C-reactive protein,red,2,TRUE
+Joint Health,Rheumatoid arthritis,30,Alpha-1-acid glycoprotein 1,red,1,FALSE
+Joint Health,Rheumatoid arthritis,30,Leucine-rich alpha-2-glycoprotein 1,red,4,FALSE
+Joint Health,Rheumatoid arthritis,30,Lysozyme C,red,1,FALSE
+Joint Health,Rheumatoid arthritis,30,Serum albumin,red,4,FALSE
+Joint Health,Rheumatoid arthritis,30,Intercellular adhesion molecule 1,red,4,FALSE
+Joint Health,Rheumatoid arthritis,30,Haptoglobin,red,3,FALSE
+Joint Health,Rheumatoid arthritis,30,Homocysteine,red,2,FALSE
+Liver Health,Non-alcoholic fatty liver disease,45,C-reactive protein,red,4,TRUE
+Liver Health,Non-alcoholic fatty liver disease,45,Retinol-binding protein 4,red,4,FALSE
+Liver Health,Non-alcoholic fatty liver disease,45,Intercellular adhesion molecule 1,red,1,FALSE
+Liver Health,Non-alcoholic fatty liver disease,45,Homocysteine,red,2,FALSE
+Liver Health,Non-alcoholic fatty liver disease,45,Lactic acid,red,1,FALSE
+Liver Health,Liver disease,40,Cystatin-C,red,2,TRUE
+Liver Health,Liver disease,40,Kallistatin,yellow,1,FALSE
+Liver Health,Liver disease,40,alpha-Ketoglutaric acid,red,1,FALSE
+Liver Health,Liver disease,40,Complement component C7,red,4,FALSE
+Liver Health,Liver disease,40,Intercellular adhesion molecule 1,red,4,FALSE
+Liver Health,Liver disease,40,Beta-2-microglobulin,red,4,FALSE
+Lung Health,Chronic obstructive pulmonary disease,50,C-reactive protein,red,3,TRUE
+Lung Health,Chronic obstructive pulmonary disease,50,Inter-alpha-trypsin inhibitor heavy chain H4,red,4,FALSE
+Lung Health,Chronic obstructive pulmonary disease,50,Phenylalanine,red,1,FALSE
+Lung Health,Chronic obstructive pulmonary disease,50,beta-Hydroxybutyric acid,red,1,FALSE
+Lung Health,Chronic obstructive pulmonary disease,50,Haptoglobin,red,3,FALSE
+Metabolic Health,Type 2 diabetes,30,C-reactive protein,red,4,TRUE
+Metabolic Health,Type 2 diabetes,30,Leucine,red,1,TRUE
+Metabolic Health,Type 2 diabetes,30,Retinol-binding protein 4,red,3,FALSE
+Metabolic Health,Type 2 diabetes,30,Sex hormone-binding globulin,yellow,4,FALSE
+Metabolic Health,Type 2 diabetes,30,Intercellular adhesion molecule 1,red,1,FALSE
+Metabolic Health,Type 2 diabetes,30,Gelsolin,red,4,FALSE
+Metabolic Health,Type 2 diabetes,30,Complement C3,red,2,FALSE
+Metabolic Health,Type 2 diabetes,30,Homocysteine,red,1,FALSE
+Metabolic Health,Type 2 diabetes,30,Short Chain Acylcarnitines,yellow,3,FALSE
+Metabolic Health,Type 2 diabetes,30,Fibulin-1,red,1,FALSE
+Metabolic Health,Pre-diabetes,25,C-reactive protein,red,4,TRUE
+Metabolic Health,Pre-diabetes,25,Leucine,red,3,TRUE
+Metabolic Health,Pre-diabetes,25,Apolipoprotein C-II,yellow,4,FALSE
+Metabolic Health,Pre-diabetes,25,Retinol-binding protein 4,red,4,FALSE
+Metabolic Health,Pre-diabetes,25,Sex hormone-binding globulin,yellow,2,FALSE
+Metabolic Health,Pre-diabetes,25,Long Chain Acylcarnitines,red,1,FALSE
+Metabolic Health,Pre-diabetes,25,Phenylalanine,red,3,FALSE
+Metabolic Health,Pre-diabetes,25,Complement C3,red,3,FALSE
+Metabolic Health,Pre-diabetes,25,Serum amyloid P-component,red,2,FALSE
+Metabolic Health,Pre-diabetes,25,Glutathione peroxidase 3,red,1,FALSE
+Metabolic Health,Pre-diabetes,25,beta-Hydroxybutyric acid,red,1,FALSE
