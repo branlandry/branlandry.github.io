@@ -58,7 +58,7 @@
           .force("link", d3.forceLink().id(d => d.id))
           .force("charge", d3.forceManyBody().strength(d => (d.type === 'Biomarker' ? -100 : -50)))  // Adjust the charge strength
           .force("center", d3.forceCenter(400, 300))
-          .force("collide", d3.forceCollide().radius(d => (d.type === 'Health Area' ? 20 : 12)))  // Add force to prevent overlapping nodes
+          .force("collide", d3.forceCollide().radius(d => (d.type === 'Health Area' ? 20 : (d.type === 'Health Category' ? 30 : 12))))  // Increase the collision force strength
           .force("x", d3.forceX().strength(0.02).x(400))  // Center of gravity
           .force("y", d3.forceY().strength(0.02).y(300));  // Center of gravity
 
@@ -204,13 +204,16 @@
 
         // Get color for "Health Area" nodes based on the score
         function getHealthAreaColor(score) {
-          if (score <= 33) {
-            return 'red';
-          } else if (score <= 66) {
-            return 'yellow';
-          } else {
-            return 'green';
+          if (score !== null) {
+            if (score <= 33) {
+              return '#FFF0ED';
+            } else if (score <= 66) {
+              return '#FFF9E5';
+            } else {
+              return '#EBF7FB';
+            }
           }
+          return 'black';
         }
 
         // Update function for node, link, and label positions
